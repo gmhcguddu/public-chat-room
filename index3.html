@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="banner.gif" />
+    
+<title>PUBLIC BOX</title> 
+
+
+ <meta name="viewport" content="width=device-width; height=device-height;
+➥ maximum-scale=1.4; initial-scale=1.0; user-scalable=yes"/>
+<meta name="description" content="Welcome To Public Box.Here You Can Send Message,Chat With Public,Advertisement Your Company ETC all In one .NOTE:-No Log In/SignUp Required">
+<meta name="author"content="Guddu Modok">
+<meta name="meta-apple-mobile-web-app-status-bar-style"
+content="black"/>
+<meta name="application-name"/>
+<meta name="copyright"content="Guddu Modok & His Company"/>
+<meta name="format-detection" content="telephone=yes"/> 
+<meta name="generator"content="Html"/> 
+ <meta http-equiv="default-style" content="/site-template.xsl ;
+type=application/xslt+xml"/>
+<meta name="handheldfriendly"/>
+<meta name="rating"content="4.5"/>
+<meta name="robots"/>
+ <meta name="verify"/>
+
+
+
+
+
+
+
+
+
+
+
+
+ <style>
+.alert {
+    padding: 5px;
+    background-color: #f44336;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+</style>
+
+
+
+<style>
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+</style>
+
+
+
+<style>
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
+
+
+
+
+
+
+ 
+ <style>
+g.visible {
+    visibility: visible
+}
+</style>
+ 
+ 
+ 
+ <style>
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+}
+
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+}
+</style>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    
+<style>
+
+.myDiv  {
+position: relative; /*Parent MUST be relative*/
+z-index: 9;
+background: green;
+    
+/*Set width/height of the div in 'parent'*/    
+width:100px;
+height:100px;
+}
+
+
+.myDiv:before {
+content: "";
+position: absolute;/*set 'child' to be absolute*/
+z-index: -1; /*Make this lower so text appears in front*/
+   
+    
+/*You can choose to align it left, right, top or bottom here*/
+top: 0; 
+right:0;
+bottom: 60%;
+left: 0;
+    
+    
+background: red;
+}
+<div class="myDiv">this is my div with multiple colours. It work's with text too!</div>
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #FFA500;
+    color: black;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #00FF00;
+    color: white;
+}
+</style>
+<link rel="shortcut icon" href="ICON.png" />
+    
+<title>PUBLIC BOX</title>
+
+</head>
+<body background="bg.gif">
+    
+      
+
+    <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+ <!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_google_plus"></a>
+<a class="a2a_button_pinterest"></a>
+<a class="a2a_button_email"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_copy_link"></a>
+<a class="a2a_button_telegram"></a>
+<a class="a2a_button_sms"></a>
+<a class="a2a_button_wechat"></a>
+<a class="a2a_button_line"></a>
+<a class="a2a_button_tumblr"></a>
+<a class="a2a_button_google_gmail"></a>
+<a class="a2a_button_amazon_wish_list"></a>
+<a class="a2a_button_blogger_post"></a>
+<a class="a2a_button_bookmarks_fr"></a>
+<a class="a2a_button_box_net"></a>
+<a class="a2a_button_blogmarks"></a>
+<a class="a2a_button_facebook_messenger"></a>
+<a class="a2a_button_google_bookmarks"></a>
+
+<a class="a2a_button_pinboard"></a>
+<a class="a2a_button_outlook_com"></a>
+<a class="a2a_button_print"></a>
+<a class="a2a_button_skype"></a>
+<a class="a2a_button_printfriendly"></a>
+
+</div>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.linkname = "Public Box";
+a2a_config.linkurl = "publicbox.000webhostapp.com";
+a2a_config.custom_services = [["Public Box","publicbox.000webhostapp.com",""]];
+a2a_config.num_services = 22;
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END --> </div></div></div>
+    
+    <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">News&times;</a>
+  <div class="overlay-content">
+    <a href="http://gestyy.com/wt3m9Q">About public Box</a>
+   
+    </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+    
+    
+    
+  <center> <b> </b></center>
+    
+<g class="visibile">
+<audio controls autoplay hidden>
+  <source src="ring.mp3" type="audio/mp3">
+ 
+</audio>
+</g>
+<!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+
+  <!-- Modal content -->
+ <center><br><br> <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+     <CENTER> <h2>WELCOME TO PUBLIC BOX</h2></CENTER>
+     
+   <marquee><h3>Welcome To Public Box.Here You Can Send Message,Chat With People,Advertisement Your Company etc.</marquee><br><b><font color="blue"><center>NOTE:-No LOGIN/Signup<p align="right"></p>
+    </div><b><i><h2><font face="goudy stout"><border><a href="mobile.html">LETS START>>></a><br><a href="post.html">POST>>></a><br><a href="timeline.html">TIMELINE>>></a></font></h2></i></b><br><b>
+    
+   <a href="http://gestyy.com/wyqTzt">Registration & Earn</a>
+
+    
+    <div class="modal-footer"><a href="desktop.html"><input type="button" value="View with Mobile Version">
+    <br><br>
+    <a href="http://app.appsgeyser.com/6048760/PUBLIC%20BOX">Download android version</a><br><iframe src="http://www.appsgeyser.com/social_widget/social_widget.php?width=100&height=80&apkName=PUBLIC BOX_6048760&simpleVersion=yes" width="180" height="220" vspace="0" hspace="0" frameborder="no" scrolling="no" seamless="" allowtransparency="true"></iframe>
+    
+    
+      <a href="mobile.html"><img src="banner.gif"height="10%"width="100%" onclick="mobile.html"></a>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById(("mydiv")));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function myFunction() {
+    location.reload();
+}
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<b><mark><a href="http://guddumodok.wixsite.com/guddumodok">Powered By:-Guddu Modok</a><a href="gm.hc.pep.zone"> & His Company</a></mark></b>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- publicbox.000webhostapp.com -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3750885831612346"
+     data-ad-slot="8639908206"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<!-- Start of shorte.st banner code --> 
+<a href="http://join-shortest.com/ref/f2f71d3cd5?user-type=new"><img src="https://static.shorte.st/bundles/smeuser/img/referral_banners/728x90.png?2017-10-13.0" title="Shorte.st links, biggest payouts. Join now" width="728" height="90" /></a> 
+<!-- End of shorte.st banner code -->
+<br><br><br>
+
+
+</body>
+</html>

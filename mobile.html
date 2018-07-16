@@ -1,0 +1,176 @@
+<DOCTYPE html><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="ICON.png" />
+<HTML>
+    <head><style>
+ .btn-5 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+
+.btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+}
+body {margin:0;}
+footer{
+    display:none;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+
+    <style>
+    img {
+    max-width: 100%;
+    max-height: 100%;
+}
+div {
+    background-color: white;
+  width
+    padding: 20px; 
+    
+    resize:vertical;
+    overflow: auto;
+    border-left: 5px dashed lime;
+    border-top: 5px solid orange;
+    border-bottom: 5px solid green;
+    border-right: 5px dashed lime;
+   
+}
+</style>
+        <!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+   <link rel="shortcut icon" href="ICON.png" />
+    
+<title>PUBLIC BOX</title> 
+
+<script>
+
+function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function checkCookie() {
+    var user=getCookie("username");
+    if (user != "") {
+        alert("Welcome again " + user);
+    } else {
+       user = prompt("Please enter your name:","");
+       if (user != "" && user != null) {
+           setCookie("username", user, 30);
+       }
+    }
+}
+
+</script>
+ 
+</HEAD>
+<body background="cg.gif"onload="checkCookie(###)">
+
+
+
+
+
+
+
+
+
+
+
+
+<body> <div class="navbar">
+  <a href="index.html"class="btn btn-5">Home</a>
+  <a href="mobile.html"class="btn btn-5">Message</a>
+  <a href="post.html"class="btn btn-5">Post</a><a href="timeline.html"class="btn btn-5">Timeline</a>
+   <a href="https://drive.google.com/uc?id=1yOxlvat71peMJeLlszWoHHLejTCs_jut&export=download"class="btn btn-5">Download</a>
+</div>    
+
+
+    
+
+
+
+
+
+
+   <iframe src="seechat.html" width="100%" height="470"scrolling="auto">>
+
+   </iframe>
+   
+   
+  
+    
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <br>
+    <iframe src="send.html" width="100%" height="80">
+     </iframe>
+     
+
+
+
+<footer>
